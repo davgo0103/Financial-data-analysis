@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rugged-lacing-366001",
+  "private_key_id": "4bd69ce99a47976acaa160bfa1d2120ab7c8bbff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCPgIZA8J0PFbxn\nWJrTPO6ru67lXtopJeCDXsgWeboHpaKU+9oQkVTGJnlVVsnGzTEiBW5U8DEJgMLU\nXZYjue+rgzrlsc2oq3B6MsbDDQzkaE+RHxHGl9Wn8YTs5w86be6waFz7M2NYpcaZ\nzMZLm2eghQ4s5CLHaz6RZjlwtV/mqh1TPbCZw4x4kK+dIBP0BmZA6asbh33Wv+3f\nWlmTp5bW/sz91ZN9DsTmBpncT8QbaNK6OihIm0upyNk2I+VwGeqDZVyWEpOdfxgk\n1r9WWdGNAN3AJcpEILeSs6o16aQumyr5w6Mon4I2DfGxGuMFv0tDdq5kkmMU/jrn\n5nUBPCd/AgMBAAECggEACkIo1smcoLBwGH84CjPH6BTxqsn+FIT1qM6ExT6McvF/\nTuE2NIr/IW8sq1IZ+JFAmusCeSX2i3Rd+Sp7ijBHlt45vqPYTN98me+5T8ZGDqn6\nTiiHb8f46RmV5A2chBPJxWighQCmcHbhXKtL3anNXadFXSYt6k2bWm+RWaJNqcKS\nCeDWwDpQ7HR0OLA5evjP3I7YwnBPYGcbynHZ5O8xLEIvDySRr/V79F++FnLrtEvj\nJqFGJs+Av2rJwfbiIUQHgsu9KuFL1bnaJmcJuzqpHd+pzXBRqKCS0I6EKo8icqcj\nGE6mRZJxl9dFfLhQgqGbiO9f255YCn3Ph94zlr1SCQKBgQDIWZmPW8fymWvEn//o\npOGeVFRBbUOT5Oz3RcUmly7WkqSAPp/Jw+AAVXMsT0sFLN/z4iHHkIvppEstrHng\n/v/wStfLB3Tuc4ZOx+8wdwDxKqi3J+Mo5z9tHvK/PKUXYFz7dYiEtnqyIwb9sfxS\nqEwmBxfL0gPHSSLRfJaU1Dt/wwKBgQC3XJr4Xav6i/UtlxVzNTonvzESZq4KJQ1d\nkh3Jbb2mO4kqaeD9/MQcRg9i8JOgpeHpzIrdoIcu72LUwG99d3xmliRUROC1AlGI\nYQwNTPBFm4MsDa4pUPSOM6PO/h1Q+9Zg8ZWhP3N9KofkNJIQxx80nYeo3tOx/XsF\ncOZyBRBZlQKBgBVx+cztjxZ5s55lXfgiBgBzmF00e+JNw8uoDTVXQ202XyNXELWB\nIO4IN37LsgUIy6QIVYNOBpvouR9XcehSg0TOThDuaGbJuNuf7QtsAY7O+SY5v8f2\nEMT2ZhdwP1+kMe+8ofNKsRF2TF5FefPDDfuYEMUBYuQnAPIZeujNWt0PAoGAZrj3\njIqVrUA5M7g/aRJ5qQjASgnCGKbXTQNtsonLRFR4LI2yYTf4+cn6FrimS8qCvIM9\njJnBAfdUS9Ie45BL3gDhC2Cm7mEFIj0UDmN6+9P6cXScjELxLrUZYP4VmGftmtPc\nusAcSBPKm3skFUgoYEacWGu09zMFd2/feiMCHN0CgYEAinr+GOoXP6KFyTthX0CK\nGEWfwU8y2FCGN3y+0+gwM/0gVB+d8XGKxFqUxEKjhepz+LbZbhJoSpa+DKb763FL\nE9iM+qQaYI8gZ/u44qkXvtJVegEyiYdQ2tUqR8LazxOxnaLnKl3WQF7p8hyZjZTI\nzuoGTeJhw82dOzXtL/lGbvc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "testgs@rugged-lacing-366001.iam.gserviceaccount.com",
+  "client_id": "118410510139399063888",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/testgs%40rugged-lacing-366001.iam.gserviceaccount.com"
+}
