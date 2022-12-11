@@ -13,7 +13,7 @@ import os
 ################################## Config ##################################
 line_token = '42CbyNEG6cR7rCAIVnZao0TxTNNsp1Ad54PWAmVBReO' #TOKEN   
 dc_url = 'https://discord.com/api/webhooks/782196400003219456/l-sbfRV08zxjFpOAjC_WwfHxfc_-dNgsXGOwmsPBwWaU_EKVZOLcUfyiMPmv-Pp4R1VD' #Discord WebHook URL
-SEND_TYPE = 'LINE' #訊息傳遞種類，可填 LINE、Discord、ALL 注意大小寫
+SEND_TYPE = 'Discord' #訊息傳遞種類，可填 LINE、Discord、ALL 注意大小寫
 DATE = "" #留空使用預設日期 格式:yyyymmdd
 ############################################################################
 
@@ -155,7 +155,7 @@ def init():
 
 
 # START
-if(SEND_TYPE != 'Discord' and SEND_TYPE != 'LINE'):
+if(SEND_TYPE != 'Discord' and SEND_TYPE != 'LINE' and SEND_TYPE != 'ALL'):
     print("訊息傳遞種類錯誤")
     leave()
 else:
