@@ -15,6 +15,7 @@ line_token = '42CbyNEG6cR7rCAIVnZao0TxTNNsp1Ad54PWAmVBReO' #TOKEN
 dc_url = 'https://discord.com/api/webhooks/782196400003219456/l-sbfRV08zxjFpOAjC_WwfHxfc_-dNgsXGOwmsPBwWaU_EKVZOLcUfyiMPmv-Pp4R1VD' #Discord WebHook URL
 SEND_TYPE = 'Discord' #訊息傳遞種類，可填 LINE、Discord、ALL 注意大小寫
 DATE = "" #留空使用預設日期 格式:yyyymmdd
+OPEN_SEND = "TRUE" #開啟程式時是否先執行一次? 填入 TRUE 每次執行時都會先跑一次
 ############################################################################
 
 def leave():
@@ -60,9 +61,19 @@ def main():
 
         for i in tbody_all_row:
             row_list = []
+            s = 0
             for td in i.find_all("td"):
+                
                 if(td.text != "--"):  #檢查資料是否為數值，不然無法產生圖片
-                    row_list.append(td.text)
+                    if(s == 4):
+                        try:
+                            row_list.append(float(td.text))
+                        except:
+                            row_list.append(td.text)
+                    else:
+                        row_list.append(td.text)
+                    s+=1
+                    
             tbody_list.append(row_list)
         
         shareprice_df = pd.DataFrame(data = tbody_list,columns=thead_list)
@@ -88,17 +99,17 @@ def main():
                         values='漲跌百分比(%)',
                         color_continuous_scale='Geyser',
                         color='漲跌百分比(%)',
-                        height = 4500,
-                        width = 4500,)
+                        height = 2000,
+                        width = 2000,)
 
     fig.update_traces(textposition='middle center',
-                            textfont_size=68,
+                            textfont_size=76,
                             textinfo='label+text+value+percent parent'
                             )
     fig.data[0].texttemplate = "%{label}<br>%{value}%"
 
     pio.write_image(fig, 'img.png') #產生圖片
-    message = new_dt.strftime("%Y-%m-%d") + " 指數漲跌" #訊息    
+    message = new_dt.strftime("%Y-%m-%d") + " 指數漲幅" #訊息    
 
     
     if(SEND_TYPE == 'LINE' or SEND_TYPE == 'ALL'):
@@ -159,7 +170,10 @@ if(SEND_TYPE != 'Discord' and SEND_TYPE != 'LINE' and SEND_TYPE != 'ALL'):
     print("訊息傳遞種類錯誤")
     leave()
 else:
-    init()
+    if(OPEN_SEND == 'TRUE'):
+        init()
+    else:
+        print('依照設定開啟不執行')
 
 schedule.every().day.at("14:00").do(init) #每日定時重複執行
 
